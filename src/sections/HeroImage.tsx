@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 const HeroImage = () => {
@@ -10,6 +11,7 @@ const HeroImage = () => {
         }}
         className="absolute w-screen min-h-full -z-50"
       >
+        {/* TODO: USE DESKTOP SVG FOR THIS PART */}
         <svg
           width="393"
           height="529"
@@ -53,14 +55,23 @@ const HeroImage = () => {
           />
         </svg>
       </div>
-      <div className="m-0 pt-96 z-50 flex flex-col justify-center">
-        <h1 className="font-bold text-3xl">CougarCS</h1>
+      <div className="m-0 pt-96 px-8 z-50 flex flex-col justify-center gap-y-4">
+        {/* TODO: FIX TITLE */}
+        <h1 className="font-bold text-3xl text-white font-mono">COUGARCS</h1>
         <div
           className="
     font-chakra font-medium text-[16.6px] leading-[22px] text-center text-white"
         >
           WE COMPUTE STUDENT SUCCESS.
         </div>
+
+        {/* TODO: Add icons check shadCN icons, correct size and boxiness*/}
+        <Button variant="outline" className="bg-red-500">
+          Become a Member!
+        </Button>
+        <Button variant="outline" className="bg-transparent text-white">
+          Join our discord
+        </Button>
       </div>
     </div>
   );
