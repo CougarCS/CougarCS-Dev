@@ -66,11 +66,17 @@ const HeroImage = () => {
         </div>
 
         {/* TODO: Add icons check shadCN icons, correct size and boxiness*/}
-        <Button variant="outline" className="bg-red-500">
-          Become a Member!
+        <Button
+          variant="outline"
+          className="font-manrope bg-white text-red-700 text-[16px] font-semibold leading-[21.86px] tracking-[-0.01em] text-left"
+        >
+          Become a Member
         </Button>
-        <Button variant="outline" className="bg-transparent text-white">
-          Join our discord
+        <Button
+          variant="outline"
+          className="font-manrope bg-transparent text-white text-[16px] font-semibold leading-[21.86px] tracking-[-0.01em] text-left"
+        >
+          Join our Discord
         </Button>
       </div>
     </div>
