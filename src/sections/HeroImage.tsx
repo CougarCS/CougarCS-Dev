@@ -7,7 +7,7 @@ const HeroImage = () => {
       <div
         style={{
           background:
-            "linear-gradient(180deg, #C80F2E 98.06%, rgba(200, 15, 46, 0) 99.35%)",
+            "linear-gradient(180deg, #C80F2E 100%, rgba(200, 15, 46, 0) 19.35%)",
         }}
         className="absolute w-screen min-h-full -z-50"
       >
