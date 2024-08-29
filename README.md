@@ -14,6 +14,8 @@ Project is built with React using Vite. Want to get involved? Get in contact wit
 
 Our discord is [https://discord.gg/eGSk3PeSBS](here)
 
+Check out our design on [https://www.figma.com/design/s2fUgiFpoXGBSOX5feNLhQ/Website-Re-design---CougarCS?node-id=59-69&node-type=CANVAS&t=rHa4uCF3jIwNY47A-0](Figma)
+
 <br/>
 <hr/>
 <br/>
