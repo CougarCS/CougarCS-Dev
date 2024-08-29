@@ -22,7 +22,7 @@ Check out our design on [Figma](https://www.figma.com/design/s2fUgiFpoXGBSOX5feN
 
 # Libraries
 
-- Styling : [TailwindCSS](https://github.com/react-bootstrap/react-bootstrap)
+- Styling : [TailwindCSS](https://tailwindcss.com/)
 - Linting: [ESLint](https://eslint.org/)
 <!-- - Testing: [Cypress](https://www.cypress.io/) -->
 
