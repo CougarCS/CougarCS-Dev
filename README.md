@@ -8,13 +8,13 @@ Current website is outdated, with our new design we drive members to a better us
 
 CougarCS-Web is the revamp version of the current cougarcs.com website.
 
-Check old repo [https://github.com/CougarCS/CougarCS-Client](here).
+Check old repo [here](https://github.com/CougarCS/CougarCS-Client).
 
 Project is built with React using Vite. Want to get involved? Get in contact with the CougarCS Webmaster(webmaster@cougarcs.com) to get involved.
 
-Our discord is [https://discord.gg/eGSk3PeSBS](here)
+Our discord is [here](https://discord.gg/eGSk3PeSBS)
 
-Check out our design on [https://www.figma.com/design/s2fUgiFpoXGBSOX5feNLhQ/Website-Re-design---CougarCS?node-id=59-69&t=rHa4uCF3jIwNY47A-1](Figma)
+Check out our design on [Figma](https://www.figma.com/design/s2fUgiFpoXGBSOX5feNLhQ/Website-Re-design---CougarCS?node-id=59-69&t=rHa4uCF3jIwNY47A-1)
 
 <br/>
 <hr/>
