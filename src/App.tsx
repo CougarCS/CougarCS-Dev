@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import OfferCards from "./components/OfferCards";
+import OfferCards from "./components/OfferCard";
 import SectionAnnoucement from "./components/SectionAnnoucement";
 import AboutUs from "./sections/AboutUs";
 import Affiliates from "./sections/Affiliates";
@@ -8,6 +8,7 @@ import Branches from "./sections/Branches";
 import ClubStats from "./sections/ClubStats";
 import HeroImage from "./sections/HeroImage";
 import MeetOfficers from "./sections/MeetOfficers";
+import WhatWeOffer from "./sections/WhatWeOffer";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <HeroImage />
         <ClubStats />
         <AboutUs />
-        <OfferCards />
+        <WhatWeOffer />
         <Branches />
         <Affiliates />
         <MeetOfficers />

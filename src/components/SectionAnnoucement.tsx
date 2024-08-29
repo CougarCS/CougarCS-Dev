@@ -16,16 +16,11 @@ const SectionAnnouncement: React.FC<SectionAnnouncementProps> = ({
     <div className="flex justify-center">
       <div
         className={cn(
-          "w-8 h-8 border-2 rounded-l-sm flex justify-center items-center",
-          `border-${color}-700`, // Use the color prop for the border
+          `w-8 h-8 border-2 rounded-l-sm flex justify-center items-center border-${color}-700`,
         )}
       >
         {Icon ? (
-          <Icon
-            className={`fill-current text-${color}-700`}
-            width={14}
-            height={16}
-          />
+          <Icon className={`fill-current text-white`} width={14} height={16} />
         ) : (
           <svg
             width="14"
