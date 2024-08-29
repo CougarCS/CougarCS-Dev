@@ -1,84 +1,61 @@
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { branchesData } from "../util/branches";
-import BranchesTab from "@/components/BranchesTab";
+import BranchesCard from "@/components/BranchesCard";
 import {
-	branchBorderBottomMap,
-	branchTextColorMap,
-	branchStrokeMap,
-	branchBorderBottomHoverMap,
-} from "../util/branches";
+  branchesData,
+  branchBorderBottomHoverMap,
+  branchStrokeMap,
+  branchTextColorMap,
+  branchBorderBottomMap,
+} from "@/util/branches";
 
 export default function Branches() {
-	return (
-		<div className="flex flex-col items-center max-h-[685px] h-[685px] px-4 pt-6 pb-11 bg-branchesBg shadow-sm">
-			<div className="flex flex-col justify-center items-center">
-				<img
-					src="icons/branches.svg"
-					alt="branches"
-					height={31}
-					width={132}
-					className="mb-6"
-				/>
+  return (
+    <div className="hidden lg:flex lg:flex-col items-center w-full bg-branchesBg py-20">
+      <div className="max-w-7xl">
+        <div className="flex flex-col items-center mb-12">
+          <img
+            src="icons/branches.svg"
+            alt="branches"
+            height={63}
+            width={190}
+            className="mb-8"
+          />
 
-				<div className="px-6 mb-3">
-					<h1 className="text-infosecBg font-medium text-2xl mb-1">
-						Explore our three branches
-					</h1>
-					<p className="text-cardPrimary text-sm">
-						Click on one of the branches below to learn more
-					</p>
-				</div>
-			</div>
+          <h1 className="text-csred font-bold text-3xl mb-3">
+            Explore our three branches
+          </h1>
+          <p className="text-cardPrimary text-lg font-semibold">
+            Learn about the branches of CougarCS that power what we do.
+          </p>
+        </div>
 
-			<Tabs defaultValue="infosec" className="w-full h-10">
-				<TabsList className="w-full flex justify-between bg-cardTabBg shadow-sm mb-4">
-					<TabsTrigger
-						value="infosec"
-						className="text-cardTabInactive border-[1.4px] border-transparent data-[state=active]:border-infosecBg"
-					>
-						Information Security
-					</TabsTrigger>
-					<TabsTrigger
-						value="tutoring"
-						className="text-cardTabInactive border-[1.4px] border-transparent data-[state=active]:border-tutoringBg"
-					>
-						Tutoring
-					</TabsTrigger>
-					<TabsTrigger
-						value="webdev"
-						className="text-cardTabInactive border-[1.4px] border-transparent data-[state=active]:border-webdevBg"
-					>
-						Web Dev.
-					</TabsTrigger>
-				</TabsList>
-
-				{branchesData.map(
-					({
-						name,
-						description,
-						activities,
-						value,
-						learnMoreHref,
-						learnMoreText,
-					}) => (
-						<BranchesTab
-							key={name}
-							name={name}
-							description={description}
-							activities={activities}
-							value={value}
-							iconHeight={30}
-							iconWidth={30}
-							learnMoreHref={learnMoreHref}
-							learnMoreText={learnMoreText}
-							bottomBorderColor={branchBorderBottomMap[value]}
-							hoverBorderColor={branchBorderBottomHoverMap[value]}
-							stroke={branchStrokeMap[value]}
-							textColor={branchTextColorMap[value]}
-						/>
-					)
-				)}
-			</Tabs>
-		</div>
-	);
+        <div className="flex gap-8">
+          {branchesData.map(
+            ({
+              activities,
+              description,
+              learnMoreHref,
+              learnMoreText,
+              name,
+              value,
+            }) => (
+              <BranchesCard
+                activities={activities}
+                description={description}
+                learnMoreHref={learnMoreHref}
+                learnMoreText={learnMoreText}
+                name={name}
+                key={value}
+                iconHeight={38}
+                iconWidth={38}
+                stroke={branchStrokeMap[value]}
+                bottomBorderColor={branchBorderBottomMap[value]}
+                textColor={branchTextColorMap[value]}
+                hoverBorderColor={branchBorderBottomHoverMap[value]}
+              />
+            ),
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
