@@ -1,13 +1,15 @@
 const MeetOfficers = () => {
   return (
-    <div className="bg-[url('background/meetofficers.svg')] h-[300px] w-full">
-      <div className="flex flex-col items-center px-4 pt-16">
-        <h1 className="font-semibold text-2xl text-center text-white px-6">
+    <div className="flex justify-center bg-[url('background/meetofficers.svg')] h-[300px] w-full lg:hidden">
+      <div className="flex flex-col items-center max-w-96 px-4 pt-16">
+        <h1 className="font-semibold text-2xl text-center text-white px-6 mb-5">
           Meet the officers that make up CougarCS
         </h1>
 
-        <button className="flex items-center justify-center text-csred bg-white rounded-lg px-4 py-2 mt-4 w-[220px] h-[51px]">
-          <span className="text-csred font-medium">Check out the team</span>
+        <button className="flex items-center justify-center text-csred bg-white rounded-lg px-4 py-2 w-60 h-14">
+          <span className="text-csred font-semibold text-lg">
+            Check out the team
+          </span>
           <svg
             width="24"
             height="24"

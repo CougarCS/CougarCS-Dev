@@ -5,7 +5,7 @@ import Affiliates from "./sections/Affiliates";
 import MobileBranches from "./components/mobile/Branches";
 import ClubStats from "./sections/ClubStats";
 import HeroImage from "./sections/HeroImage";
-import MeetOfficers from "./sections/MeetOfficers";
+import MeetOfficersMobile from "./components/mobile/MeetOfficers";
 import WhatWeOffer from "./sections/WhatWeOffer";
 import Branches from "./sections/Branches";
 
@@ -22,7 +22,7 @@ function App() {
         <Branches />
         <MobileBranches />
         <Affiliates />
-        <MeetOfficers />
+        <MeetOfficersMobile />
       </div>
     </div>
   );
