@@ -1,12 +1,12 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { branchesData } from "../../util/branches";
+import { branchesData } from "../../displayData/branches";
 import BranchesCard from "@/components/BranchesCard";
 import {
   branchBorderBottomMap,
   branchTextColorMap,
   branchStrokeMap,
   branchBorderBottomHoverMap,
-} from "../../util/branches";
+} from "../../displayData/branches";
 
 const Branches = () => {
   return (
@@ -15,9 +15,9 @@ const Branches = () => {
         <img
           src="icons/branches.svg"
           alt="branches"
-          height={31}
-          width={132}
-          className="mb-6"
+          height={63}
+          width={190}
+          className="mb-6 h-9"
         />
 
         <div className="px-6 mb-5">
