@@ -14,7 +14,6 @@ function App() {
     <div className="m-0">
       <NavBar />
       <div className="m-0">
-        <div className="h-16 w-screen bg-red-500"></div>
         <HeroImage />
         <ClubStats />
         <AboutUs />
