@@ -21,7 +21,7 @@ const NavBar = () => {
         </span>
 
         {/* lg screens button in navbar */}
-        <span className="sm:hidden lg:inline">
+        <span className="hidden lg:inline">
           <MembershipButton />
         </span>
 
@@ -107,13 +107,16 @@ const NavBarHamburgerItems = ({ isOpen }) => {
       >
         CodeRED
       </a>
+      <div className="w-full sm:hidden">
+        <MembershipButton />
+      </div>
     </div>
   );
 };
 
 const MembershipButton = () => {
   return (
-    <button className="bg-[#C80F2E] px-6 py-1.5 rounded-sm box-border border-[1.5px] border-white border-opacity-25 text-white">
+    <button className="w-full sm:w-fit bg-[#C80F2E] px-6 py-1.5 rounded-sm box-border border-[1.5px] border-white border-opacity-25 text-white">
       Become A Member
     </button>
   );
