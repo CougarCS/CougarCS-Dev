@@ -38,3 +38,23 @@
 .read-the-docs {
   color: #888;
 }
+
+.hover-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent; /* Button background color */
+  border: 1px solid #fff; /* Button border color */
+  padding: 8px 16px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+.hover-button:hover .discord-icon-path {
+  fill: red; /* Hover color */
+}
+
+/* Default color for the icon path */
+.discord-icon-path {
+  fill: white; /* Default color */
+  transition: fill 0.3s; /* Optional: smooth transition */
+}
